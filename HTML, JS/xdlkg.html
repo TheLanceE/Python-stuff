@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script language="javascript">
+		function verif(){
+			x1=document.getElementById('cd').value
+			if((x1.length!=3)||(isNaN(x1)))
+				{alert("le code est un entier de 3 chiffres");return false;
+		}
+		function verif2(){
+			x2=document.getElementById('np').value
+				if (x2=length==0){
+					alert("nom et prenom doit etre non vide");return false;
+				}
+		}
+	</script>
+
+</head>
+<body>
+<form onsubmit="verif()">
+	<fieldset>
+		<label>Code<input type="text" name="cd">
+		<label>nom et prenom</label><input type="text" name="np">
+		<label>niveau</label><select size="1">
+			<option>choisir</option>
+			<option>niveau 1</option>
+			<option>niveau 2</option>
+			<option>niveau 3</option>
+		</select>
+		chaque question sur un point
+		<p>1) la lettre "A" est<label> consonne</label><input type="radio" name=""><label>voyelle</label><input type="radio" name=""></p>
+		<p>2)<label>le mot "STI" est composé de</label><select size="3">
+			<option>un</option>
+			<option>deux</option>
+			<option>trois</option>
+		</select>
+	caractéres</p>
+	<p>3)<label>Les lettres du mot"STI" sont</label><label>G</label><input type="checkbox" name=""><label>T</label><input type="checkbox" name=""><label>I</label><input type="checkbox" name=""><label>S</label><input type="checkbox" name=""></p>
+	<input type="submit" value="note"><input type="submit" value="refaire">
+	</fieldset>
+</body>
+</html>
